@@ -1,0 +1,219 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+<!--    &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
+<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+<!--  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">-->
+<!--  <title>about</title>-->
+<!--  &lt;!&ndash; Latest compiled and minified CSS &ndash;&gt;-->
+<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<!--  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>-->
+<!--  <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Pacifico&display=swap" rel="stylesheet">-->
+<!--</head>-->
+
+<!--<script>-->
+<!--    function showloading() {-->
+<!--        image = document.getElementById('loading_image');-->
+<!--        image.style.display = 'inline'-->
+<!--    }-->
+<!--</script>-->
+
+<!--<body>-->
+<!--<div>-->
+<!--  <header class="site-header">-->
+<!--  <nav class="navbar navbar-expand-md navbar-dark container-bg ">-->
+<!--    <div class="container">-->
+<!--      <a class="heading_font" href="/">Doc2Digital</a>-->
+<!--      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--      </button>-->
+<!--      <div class="collapse navbar-collapse" id="navbarToggle">-->
+<!--        <div class="navbar-nav mr-auto">-->
+<!--          <a class="nav-item nav-link" href="/">Home</a>-->
+<!--          <a class="nav-item nav-link" href="/model">Model</a>-->
+<!--          <a class="nav-item nav-link" href="/about">About</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </nav>-->
+<!--  </header>-->
+<!--</div>-->
+
+<!--<div class="info-container">-->
+<!--    <h1>About</h1>-->
+<!--    <p>Significant amounts of research has been done related to table extraction-->
+<!--and there are several tools present over the internet among which most-->
+<!--popular ones are tabular, camelot. However, there are many problems with-->
+<!--these tools which are:-->
+<!--<ul>1) Most Table Extraction softwares is less robust, they fail when-->
+<!--image-based input is given instead of test-based.</ul>-->
+<!--<ul>2) Most are made to extract tables in a fixed particular format.</ul>-->
+<!--<ul>3) Many result in output where all data are saved in disordered format.</ul>-->
+<!--<ul>4) There is no free or open-source solution which is generic (which works-->
+<!--on all jpg, jpeg, image-based pdf).</ul>-->
+<!--In addition to the above, there are various papers but most of them are not-->
+<!--implemented as a tool to be used by general people</p>-->
+<!--    <p>In our solution we divide the whole problem into 2 different field which-->
+<!--include:-->
+<!--<ul>a) Detecting the table from Image using Object Detection</ul>-->
+<!--<ul>b) Used Image processing and tesseract tool (o OCR tool) for cell-->
+<!--recognition and text extraction,</ul>-->
+<!--</p>-->
+
+<!--</div>-->
+<!--        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+<!--        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+<!--</div>-->
+<!--<div class='footer'>-->
+<!--           <div class="contact">-->
+<!--               <a target="_blank" href="https://github.com/"><i class="fab fa-github fa-lg contact-icon"></i></a>-->
+<!--           </div>-->
+<!--           <p class='footer-description'>Made with ❤️ with CODE.</p>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+  <title>result</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<script>
+    function showloading() {
+        image = document.getElementById('loading_image');
+        image.style.display = 'inline'
+    }
+</script>
+
+<body>
+<div>
+  <header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark container-bg ">
+    <div class="container">
+      <a class="heading_font" href="/">Doc2Digital</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="/">Home</a>
+          <a class="nav-item nav-link" href="/model">Model</a>
+          <a class="nav-item nav-link" href="/about">About</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </header>
+</div>
+<h3 style="margin: auto">Tool</h3>
+<div style="width: 90%; margin: auto; text-align: center">
+    <img id="dataTable" src="{{ url_for('send_file', filename=image_file_name)}}" style ="max-width: 500px; max-height: 450px; margin-top: 30px; margin-bottom: 10px">
+    <p style="font-style: italic">{{ image_file_name }}</p>
+    <h3>Download Spreadsheet by <b>Clicking</b> download button</h3>
+
+    <a href="/"><input type="submit" value="GO to Home Page"></a>
+    <!-- <a href="/return-files/{{test.xlsx}}" target="blank"><button class='btn btn-default'>Download</button></a> -->
+    <button id="btnExportToCsv" class='btn btn-default'>Download</button>
+</div>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/"><i class="fab fa-github fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made with ❤️ with CODE.</p>
+</div>
+
+<script>
+  const dataTable = document.getElementById("dataTable");
+  const btnExportToCsv = document.getElementById("btnExportToCsv");
+
+  btnExportToCsv.addEventListener("click", () => {
+      const exporter = new TableCSVExporter(dataTable);
+      const csvOutput = exporter.convertToCSV();
+      const csvBlob = new Blob([csvOutput], { type: "text/csv" });
+      const blobUrl = URL.createObjectURL(csvBlob);
+      const anchorElement = document.createElement("a");
+
+      anchorElement.href = blobUrl;
+      anchorElement.download = "table-export.csv";
+      anchorElement.click();
+
+      setTimeout(() => {
+          URL.revokeObjectURL(blobUrl);
+      }, 500);
+  });
+
+  class TableCSVExporter {
+constructor (table, includeHeaders = true) {
+  this.table = table;
+  this.rows = Array.from(table.querySelectorAll("tr"));
+
+  if (!includeHeaders && this.rows[0].querySelectorAll("th").length) {
+      this.rows.shift();
+  }
+}
+
+convertToCSV () {
+  const lines = [];
+  const numCols = this._findLongestRowLength();
+
+  for (const row of this.rows) {
+      let line = "";
+
+      for (let i = 0; i < numCols; i++) {
+          if (row.children[i] !== undefined) {
+              line += TableCSVExporter.parseCell(row.children[i]);
+          }
+
+          line += (i !== (numCols - 1)) ? "," : "";
+      }
+
+      lines.push(line);
+  }
+
+  return lines.join("\n");
+}
+
+_findLongestRowLength () {
+  return this.rows.reduce((l, row) => row.childElementCount > l ? row.childElementCount : l, 0);
+}
+
+static parseCell (tableCell) {
+  let parsedValue = tableCell.textContent;
+
+  // Replace all double quotes with two double quotes
+  parsedValue = parsedValue.replace(/"/g, `""`);
+
+  // If value contains comma, new-line or double-quote, enclose in double quotes
+  parsedValue = /[",\n]/.test(parsedValue) ? `"${parsedValue}"` : parsedValue;
+
+  return parsedValue;
+}
+}
+
+</script>
+</body>
+</html>

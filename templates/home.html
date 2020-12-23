@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+  <title>home</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<script>
+    function showloading() {
+        image = document.getElementById('loading_image');
+        image.style.display = 'inline'
+    }
+</script>
+
+<body>
+<div>
+  <header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark container-bg ">
+    <div class="container">
+      <a class="heading_font" href="/">Doc2Digital</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="/">Home</a>
+          <a class="nav-item nav-link" href="/model">Model</a>
+          <a class="nav-item nav-link" href="/about">About</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </header></div>
+<div class="info-container">
+
+    <h3>Over-view</h3>
+    <p>The
+application primarily extracts the table from the images uploaded and then
+converts them to editable format. The application is open-sourced and is flexible
+to get the output in any desired format. In this particular project we have tried to
+examine the best computer vision approach and different models architecture
+present there</p>
+
+    <h3>Tool Flow Chart</h3>
+    <p>the whole problem into 2 different field which
+include:
+a) Detecting the table from Image using Object Detection
+b) Used Image processing and tesseract tool (o OCR tool) for cell
+recognition and text extraction</p>
+    <p>Flow chart of same is:</p>
+    <div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="{{ url_for('static', filename='flowchart.jpg') }}"/>
+   </div>
+
+
+</div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</div>
+<div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/"><i class="fab fa-github fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made with ❤️ with CODE.</p>
+</div>
+</body>
+</html>
